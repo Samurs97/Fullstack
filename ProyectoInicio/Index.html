@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- ESTILOS HEADER -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <style>
+        h1 {
+            color: red;
+            /* PROPIEDAD Y VALOR */
+            background-color: yellow;
+            /* MOSTRAR PROPIEDAD COLORES,SI APARECE TACHADO ES ERRONEO */
+        }
+    </style> -->
+
+    <!-- PARA NORMALIZAR WEB INDEPENDIENTEMENTE DEL NAVEGADOR -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- FUENTE BAJADA DE INTERNET -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Open+Sans&display=swap" rel="stylesheet"> -->
+
+    <!-- CARGUE MODIFICACIONES CSS -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>
+        Tu Carrera Digital
+    </title>
+</head>
+
+<body>
+    <!-- <h1>Hola Mundo!</h1>
+    <h2>Hola Mundo!</h2> -->
+
+    <!-- EJERCICIOS HOJA CSS
+    <section class="ejercicios">
+        <h3 class="ejercicio1">Ejercicio1 h3</h3>
+        <h3 id="ejercicio2">Ejercicio2 h3</h3>
+        <h6 >Ejercicio3 h6</h6>
+        <p>Ejercicio4 p</p>
+        <img src="img/Logo-Adecco.png" alt="Logo Adecco">
+        <a href="">primerenlace</a>
+        <a href="">segundoenlace</a>
+        <a href="">tercerenlace</a>
+    </section> -->
+
+    <!-- COPIAR ICONO DESDE LA WEB -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+        <path d="M15 7a2 2 0 0 1 2 2"></path>
+        <path d="M15 3a6 6 0 0 1 6 6"></path>
+     </svg> -->
+
+    <header class="encabezado contenedor">
+        <div class="encabezado1">
+            <a href=""> <img src="img/Tu-carrera-digital-general.png" alt=""></a>
+        </div>
+        <div>
+            <div class="encabezado2">
+                <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginAlumno.aspx"> Login Alumno </a>
+                <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginEmpresa.aspx"> Login Empresa </a>
+            </div>
+            <div class="encabezado3">
+                <a href="https://www.tucarreradigital.es/zona-centro#cursos"> Cursos </a>
+                <a href="https://www.tucarreradigital.es/sobre-nosotros"> Sobre Nosotros</a>
+                <a class="botoninformate"> Informate</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <main class="fondomain">
+        <div class="contenedor">
+            <div class="margenderecho">
+                <h1>Descubre la formación que te dará la oportunidad de convertirte en un profesional digital</h1>
+                <div class="flexmain">
+                    <img src="img/ico-centro.png" alt="">
+                    <a href="https://www.tucarreradigital.es/zona-centro#cursos">Ver cursos</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- SECCION IMAGENES CORPORATIVAS -->
+    <section class="logos contenedor">
+        <img src="img/Logos-oficiales.png" alt="">
+        <img src="../ProyectoInicio/img/Logo-Adecco.png" alt="">
+    </section>
+
+    <!-- SECCION  CURSOS -->
+    <section class="seccioncursos contenedor">
+        <h3>Cursos</h3>
+        <h2>Cambia tu futuro</h2>
+        <div class="botonescursos">
+            <a class="botonvertodo" href="#">Ver todo</a>
+            <a class="botonmadrid" href="3">Madrid</a>
+        </div>
+
+        <div class="tipocursos">
+            <div class="marketing">
+                <h2>Marketing Digital</h2>
+                <div>
+                    <a href="https://www.tucarreradigital.es/zona-centro/curso-marketing-digital#cursos">Inscribrime</a>
+                </div>
+            </div>
+
+            <div class="programacion">
+                <h2>Programación Web Full Stack</h2>
+                <div>
+                    <a
+                        href="https://www.tucarreradigital.es/zona-centro/curso-programacion-web-full-stack#cursos">Inscribrime</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTILOS SECCION PIDENOSLO -->
+    <section class="pidenoslo">
+        <h3>¿Te interesa algún otro curso en tu ciudad?</h3>
+        <div>
+            <a href="">¡Pídenoslo!</a>
+        </div>
+    </section>
+
+    <!-- ESTILOS SECCION VIDEO -->
+    <section class="video contenedor">
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/SzZlMSDKE8o?si=HV8gBMMsaTS1AdtV"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </section>
+
+    <!-- ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS -->
+    <section class="paraquien contenedor">
+        <div class="paraquienizq">
+            <h3>¿PARA QUIÉN SON ESTOS CURSOS?</h3>
+            <h2>Si quieres dar un giro a tu carrera profesional y formarte en profesiones digitales con
+                futuro, este es tu
+                lugar.</h2>
+            <p>Cuando eliges un curso en <span> Tu Carrera Digital </span>, estás dando el paso definitivo hacia las profesiones con más demanda del momento, como Marketing Digital, Desarrollo Web Full Stack y Programación de Videojuegos, Diseño 3D y Realidad Virtual. Nosotros te ofrecemos formación con docentes expertos y contenidos alineados a las necesidades de las empresas. Queremos que saques el máximo partido a estos cursos y que potencies tus posibilidades de encontrar un empleo.</p>
+            <h4>PARA PARTICIPAR, NECESITARÁS ESTAR INSCRITO EN GARANTIA JUVENIL</h4> 
+            <a href="https://www.sepe.es/HomeSepe/Personas/encontrar-trabajo/Garantia-Juvenil/que-es-garantia-juvenil">Ir a la web de garántia juvenil</a>
+            <p>Descárgate esta infografía en la que te mostramos cómo descargar tu certificado de Garantía Juvenil:</p>
+            <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.tucarreradigital.es/assets/Infografia-S.G.J.pdf">Descagar imagen adjunta</a>
+        </div>
+        <div class="paraquiender">
+            <div class="paraquiendersup">
+                <h5>¿Eres <span class="destacarazul">mayor de 16 años y menor de 30 </span>?</h5>
+                <h5>¿Estás <span>sin trabajar </span>? </h5>
+                <h5>¿Estás <span>sin cursar formación </span>?</h5>
+            </div>
+            <div class="paraquienderinf">
+                <img src="../ProyectoInicio/img/ico-centro.png" alt="ico-centro">
+                <h4>Dale forma a tu futuro <br>y despega con <br><span>Tu carrera digital</span></h4>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ESTILOS LOCALIZACIONES -->
+    <section class="localizaciones">
+        <h2 class="contenedor">Localizaciones</h2>
+        <div class="contenedor">
+            <div>
+                <h3>Madrid</h3>
+                <p>Calle del Marqués de Ahumada 7 planta baja aula 15 28028, Madrid, Madrid.</p>
+            </div>
+            <div>
+                <h3>Madrid</h3>
+                <p>Calle Hospital 2 28012, Madrid, Madrid.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTILOS CONTACTAR -->
+    <section class="contactar">
+        <div>
+            <div >
+                <h3>Contactar</h3>
+            </div>  
+            <div>
+                <h2>¿Tienes dudas? Habla con nosotros</h2>
+            </div>
+            <div  class="contactarimag1">
+                <img src="img/ico-TLF.png" alt="">
+                <p>Llámanos</p> <a href="">638024408</a>
+             </div>
+            <div class="contactarimag2">
+                <img src="img/ico-EMAIL.png" alt="">
+                <p>Escríbenos</p> <a href="">patric.departearroyo@adecco.com</a>
+            </div>
+        </div>
+    </section>
+
+    <p>Llámanos</p> <a href="">638024408</a>
+    <img src="img/ico-EMAIL.png" alt="">
+    <p>Escríbenos</p> <a href="">patric.departearroyo@adecco.com</a>
+    </section>
+
+    <!-- ESTILOS FOOTER -->
+    <footer class="enlace contenedor">
+        <div class="enlace1">
+            <a href="#">Cursos zona centro</a>
+            <a href="https://www.tucarreradigital.es/sobre-nosotros">Sobre Nosotros</a>
+        </div>
+        <div class="enlace2">
+            <a hre="https://www.tucarreradigital.es/preguntas-frecuentes">Preguntas Frecuentes(FAQ)</a>
+            <a href="https://www.tucarreradigital.es/zona-centro/politica-de-cookies">Politicas de Cookies</a>
+            <a href="https://www.tucarreradigital.es/zona-centro/politica-de-privacidad">Politicas de Privacidad</a>
+            <a href="https://www.tucarreradigital.es/zona-centro/aviso-legal">Aviso Legal</a>
+        </div>
+    </footer>
+
+    <!-- <form>
+        <fieldset>
+
+            <legend> Titulo del formulario </legend>
+
+            <label> Nombre y Apellidos </label>
+            <input type="text" placeholder="Escribe aqui tu nombre" requiered>
+
+            <label> Telefono </label>
+            <input type="tel" placeholder="Llama ya">
+
+            <label> Email </label>
+            <input type="email" placeholder="Dime tu email">
+
+            <input type="submit" value="Enviar ya de ya">
+
+        </fieldset>
+
+    </form> -->
+
+    <img src="img/CTA-informate.png" alt="">
+
+</body>
+
+</html>

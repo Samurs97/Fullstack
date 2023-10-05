@@ -1,0 +1,280 @@
+/* EJERCICIO DE TODOS LOS HIJOS Y CADENA DESCENCENTE */
+.seccion1 h2{
+    background-color: blue;
+    height: 100px;
+}
+
+.seccion2>div>h2{
+    background-color: red;
+    height: 100px;
+}
+
+/* DIFERENCIA ENTRE MARGIN Y PADDING */
+.seccion3{
+    background-color: yellow;
+    height: 200px;
+    margin: 50px;
+}
+.seccion4{
+    background-color: green;
+    height: 200px;
+    padding: 50px;
+}
+
+/* EJERCICIO DISPLAY INLINE Y BLOCK */
+.seccion5 p{
+    background-color: blueviolet;
+}
+
+.seccion5 a{
+    background-color: brown;
+}
+
+.seccion5 h1{
+    background-color: aqua;
+}
+
+.seccion5 h3{
+    background-color: chartreuse;
+}
+
+.seccion5 h6{
+    background-color: deeppink;
+}
+
+.seccion5 div p{
+    background-color: olive;
+}
+
+.seccion6 p{
+    background-color: blueviolet;
+    display:inline;
+}
+
+.seccion6 a{
+    background-color: brown;
+    display: block;
+}
+
+.seccion6 h1{
+    background-color: aqua;
+    display: inline;
+}
+.seccion6 h3{
+    background-color: chartreuse;
+    display: inline;
+}
+
+.seccion6 h6{
+    background-color: deeppink;
+    display: inline;
+}
+
+.seccion6 div{
+    background-color: olive;
+    display: inline;
+}
+
+/* EJERCICIO JUSTIFY-CONTENT Y ALIGN ITEMS */
+.seccion7{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    /* flex-direction: row;   POR DEFECTO */
+    justify-content: flex-start;
+    align-items: end;
+    background-color: blue;
+}
+
+.seccion8{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: red;
+}
+
+/* EJEMPLO1 */
+.ejemplo1{
+    display: flex;
+}
+
+/* FLEX:1 DIVIDIR ESPACIO ENTRE TODOS LOS ELEMENTOS FORMADOS */
+/* .ejemplo11{
+    flex: 1;
+    max-width: 20%;
+    background-color: blue;
+}
+
+.ejemplo12{
+    flex: 1;
+    max-width: 30%;
+    background-color: red;
+}
+.ejemplo13{
+    max-width: 50%;
+    background-color: yellow;
+    flex:1;
+} */
+.ejemplo11{
+    width: 20%;
+    background-color: blue;
+}
+
+.ejemplo12{
+    width: 30%;
+    background-color: red;
+}
+.ejemplo13{
+    width: 50%;
+    background-color: yellow;
+}
+
+/* EJEMPLO2 */
+.ejemplo2{
+    display: flex;
+    flex-direction: column;
+}
+
+.ejemplo2 .ejemplo21{
+    background-color: blue;
+    height: 100px;
+}
+
+.ejemplo2 .ejemplo22{
+    background-color: red;
+    height: 200px;
+}
+
+/* EJEMPLO3 */
+.ejemplo3{
+    display:flex;
+    flex-direction: row;
+}
+
+.ejemplo31{
+    width: 40%;
+    background-color: yellow;
+}
+
+.ejemplo32{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    background-color: green;
+}
+
+.ejemplo32 .ejemplo321{
+    width: 30%;
+    background-color: blue;
+}
+
+.ejemplo32 .ejemplo322{
+    width: 70%;
+    background-color: red;
+}
+
+.mediaquori{
+    height: 500px;
+}
+
+/* MEDIAQUERIES */
+@media(min-width:1131px){
+    .mediaquori{
+        background-color: brown;
+    }
+}
+
+@media(max-width:1131px) and (min-width: 933px){
+    .mediaquori{
+        background-color: yellow;
+    }
+}
+
+@media(max-width:933px) and (min-width: 616px){
+    .mediaquori{
+        background-color: blue;
+    }
+}
+
+@media(max-width:616px) and (min-width: 350px){
+    .mediaquori{
+        background-color: red;
+    }
+}
+
+@media(max-width:350px) and (min-width: 0px){
+    .mediaquori{
+    background-color: green;
+    }
+}
+
+.ejemplo4{
+    height: 500px;
+    background-color: blue;
+    position: relative;
+}
+
+.ejemplo4 div{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* EJERCICIO GRID */
+.ejerciciogrid div{
+    border: 2px solid black;
+}
+
+.ejerciciogrid{
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 200px 100px;
+}
+
+/* EJERCICIO GRID 1 */
+.ejerciciogrid1 div{
+    border: 2px solid black;
+}
+
+.ejerciciogrid1{
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 300px 100px 200px;
+}
+
+/* EJERCICIO GRID 2  */
+.ejerciciogrid2 div{
+    border: 1px solid black;
+}
+
+.ejerciciogrid2{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 100fr 300fr 200fr 150fr;
+    grid-template-rows: 5fr 15fr 16fr 7fr;
+}
+
+/* EJERCICIO GRID 3  */
+.ejerciciogrid3{
+    display: grid;
+    /* grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr; */
+    grid: 2fr 2fr/ 1fr 1fr;
+}
+
+/* EJERCICIO GRID 4 */
+.ejerciciogrid4{
+    display: grid;
+    /* grid: 1fr/ 1fr 1fr 1fr 1fr; */
+    grid: 1fr/repeat(4,1fr);
+    /* column gap: 20px;
+    row gap: 20px; */
+    gap: 20px;
+}   
